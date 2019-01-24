@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import CircularProgress from '@material-ui/core/CircularProgress';
 import './App.sass'
 
 import Navigation from './components/navigation/index'
@@ -44,7 +45,7 @@ class App extends Component {
         return (
             <div>
                 {
-                    loading === true ? (
+                    loading ? (
                         <BrowserRouter>
                             <div
                                 className='app-container'
@@ -64,9 +65,10 @@ class App extends Component {
                         </BrowserRouter>
                     ):
                         (
-                            <div>
-                                Loading...
+                            <div className='progress'>
+                                <CircularProgress />
                             </div>
+
                         )
                 }
             </div>

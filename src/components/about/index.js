@@ -32,8 +32,6 @@ const About = ({props})=>{
               </Fade>
           </div>
 
-
-
       </div>
   )
 };
