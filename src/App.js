@@ -11,6 +11,7 @@ import Contact from "./components/contact";
 import Error from "./components/error";
 
 
+
 class App extends Component {
     render() {
         return (
@@ -20,6 +21,7 @@ class App extends Component {
                     <Navigation/>
                     <Switch>
                         <Route path='/' component={Home} exact/>
+                        <Route path='/personal_page' component={Home} exact/>
                         <Route path='/about' component={About}/>
                         <Route path='/resume' component={Resume}/>
                         <Route path='/hobbies' component={Hobbies}/>

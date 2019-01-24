@@ -2,8 +2,10 @@
   "name": "presonal_page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://denmonzh.github.io/personal_page/",
+  "homepage": "https://denmonzh.github.io/personal_page",
   "dependencies": {
+    "@material-ui/core": "^3.9.0",
+    "@material-ui/icons": "^3.0.2",
     "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "react": "^16.7.0",
